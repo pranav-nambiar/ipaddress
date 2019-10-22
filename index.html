@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>This is your damn IP</title>
+</head>
+<body>
+	<script type="text/javascript">
+		$.get('https://ipinfo.io/json',function(response)
+		{
+			document.getElementById("location").innerHTML="You are visiting this website from "+repsonse.ip;
+		},"jsonp")
+	</script>
+</body>
+</html>
