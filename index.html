@@ -6,11 +6,9 @@
 </head>
 <body>
 	<script type="text/javascript">
-		$.get('https://ipinfo.io/json',function(response)
-		{
-			document.getElementById("location").innerHTML="You are visiting this website from "+repsonse.ip;
-		},"jsonp")
+		$.getJSON('https://ipinfo.io/json', function(data) {
+  			console.log(JSON.stringify(data, null, 2));
+		});
 	</script>
-	<p id="location"></p>
 </body>
 </html>
